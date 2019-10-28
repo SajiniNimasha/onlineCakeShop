@@ -1,0 +1,95 @@
+
+<div class="container" style="padding: 16px;">  
+    <div class="text-center center-block" style="background-color: #068ea0">
+    
+        <a class="navbar-brand"  style="color: whitesmoke ;padding: 15px; background-color:  #046b79 ">View Your Cart Here</a>      
+
+      </div>    
+</div>
+
+
+      <form class="form-inline" style="background-color: #c5e9ee ; padding: 10px; border-style: groove; border-color: #79fafa"> 
+              <div class="form-group" *ngFor="let orders of  cakeOrder">
+                <label for="inputPassword6">OrderId</label>
+                <input  style="color: #1d3dc9; font-weight: 500" class="form-control mx-sm-3"  value={{orders.orderId}} >
+            
+                <label for="inputPassword6">Customer Id</label>
+                <input style="color: #1d3dc9; font-weight: 500" class="form-control mx-sm-3"  value="{{orders.custId}}">
+               
+                <label for="inputPassword6">Date</label>
+                <input  style="color: #1d3dc9; font-weight: 500" class="form-control mx-sm-3"  value="{{orders.orderDate}}">  
+              </div>
+      </form>
+
+            
+      <div class="bs-example" contenteditable="true">
+              <table class="table">
+                  <thead>
+                      <tr>
+                          <th>Product Id</th>
+                          <th>Product Name</th>
+                          <th>Price</th>
+                          <th>Category Name</th>
+                          <th>Delete</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor="let cakes of  cakeItems">
+                              <td>{{cakes.itemId}}</td>
+                              <td>{{cakes.itemName}}</td>
+                              <td>{{cakes.itemPrice}}</td>
+                              <td>{{cakes.categoryName}}</td>
+                              <td><button type="button" class="btn btn-danger">Remove</button></td>       
+                      </tr>
+                  </tbody>
+              </table>
+              
+          </div>
+  
+
+
+          <div class="card text-center" style="background-color: #d7f4f8">
+                  <div class="card-header">
+                    <h5>Total Given Below</h5> 
+                    
+                  </div>
+                  <div class="card-body">
+                          
+                                  <div class="form-row">
+                                    <div class="form-group col-md-6" >
+                                      <h6>__SubTotal__</h6>
+                                      <input style="color: #1d3dc9; font-weight: 900"  type="text" class="form-control" value="Rs.  {{total}}.00">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                      <h6>__Total__</h6>
+                                      <input  style="color: #1d3dc9; font-weight: 900" type="text" class="form-control" value="Rs.  {{total}}.00/="  #subTot>
+                                    </div>
+                                  </div>
+                          
+                   
+                   <a routerLink="/Proceed To ChechOut/{{total}}" class="btn btn-primary">Proceed To ChechOut</a>
+                  </div>
+
+
+
+                  
+                 
+                </div>
+
+
+          
+          
+
+        
+      
+
+
+
+
+
+
+
+
+
+
+

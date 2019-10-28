@@ -1,0 +1,131 @@
+
+  <div class="container" style="padding: 16px;">  
+          <div class="text-center center-block" style="background-color: #068ea0">
+              <a class="navbar-brand" (click)="stateChanger()" style="color: whitesmoke;padding: 15px ;background-color:  #046b79">Wedding Cakes Ideas</a>
+              <a class="navbar-brand" (click)="stateChanger1()" style="color: whitesmoke; padding: 15px;  background-color:  #046b79 "> Special Occation Ideas</a>
+              <a class="navbar-brand" (click)= "stateChanger2()" style="color: whitesmoke ;padding: 15px; background-color:  #046b79 ">Birthday Cakes Ideas</a>      
+  </div>    
+  </div>
+  
+<div *ngIf="state;then wedding ">State true</div>
+
+  <ng-template #wedding>
+  <div class="card-deck">
+      <div class="card">
+        <img src="..\..\assets\lm-blue-cake-m.png" class="card-img-top" style="height: 200px ;width: 200px">
+        <div class="card-body">
+          <h5 class="card-title">Blue Colour Modern Cake</h5>
+         <p>This Blue Colour Modern Cake is made by using special blue berry flavour</p>
+         <input class="btn btn-primary"  value="Add To Cart" style="background-color: rgb(74, 29, 126)">
+        
+        </div>
+      </div>
+      <div class="card">
+        <img src="..\..\assets\wedding_cake_PNG19444.png" class="card-img-top" style="height: 200px ;width: 180px">
+        <div class="card-body">
+          <h5 class="card-title">Butter Icing Vanila Cake</h5>
+          <p>This Butter Icing Vanila Cake is made by using special vanila flavour</p>
+         <input class="btn btn-primary"  value="Add To Cart" style="background-color: rgb(74, 29, 126)">
+        
+        </div>
+      </div>
+      <div class="card">
+        <img src="..\..\assets\Wedding-Cake-Free-PNG-Image.png" class="card-img-top" style="height: 200px ;width: 180px">
+        <div class="card-body">
+            <h5 class="card-title">Butter Icing Vanila Mix Cake</h5>
+            <p>This Butter Icing Vanila Cake is made by using special vanila flavour</p>
+           <input class="btn btn-primary"  value="Add To Cart" style="background-color: rgb(74, 29, 126)">
+          
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+  <!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+
+  <div *ngIf="state1;then special ">State true</div>
+
+  <ng-template #special>
+  <div class="card-deck">
+      <div class="card">
+        <img src="..\..\assets\download.jpg" class="card-img-top" style="height: 200px ;width: 200px">
+        <div class="card-body">
+          <h5 class="card-title">Dark  Crispey Chocolate Cake</h5>
+         <p>This Blue Colour Modern Cake is made by using special blue berry flavour</p>
+         <input class="btn btn-primary"  value="Add To Cart" style="background-color: rgb(74, 29, 126)">
+        
+        </div>
+      </div>
+      <div class="card">
+        <img src="..\..\assets\images.jpg" class="card-img-top" style="height: 200px ;width: 180px">
+        <div class="card-body">
+          <h5 class="card-title">Cream Butter Icing  Cake</h5>
+          <p>This Butter Icing Vanila Cake is made by using special vanila flavour</p>
+         <input class="btn btn-primary"  value="Add To Cart" style="background-color: rgb(74, 29, 126)">
+        
+        </div>
+      </div>
+      <div class="card">
+        <img src="..\..\assets\download (1).jpg" class="card-img-top" style="height: 200px ;width: 180px">
+        <div class="card-body">
+            <h5 class="card-title">Cupcakes With Any Deccoration</h5>
+            <p>This Butter Icing Vanila Cake is made by using special vanila flavour</p>
+           <input class="btn btn-primary"  value="Add To Cart" style="background-color: rgb(74, 29, 126)">
+          
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+
+
+
+  <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+  <div *ngIf="state2;then birthDay ">State true</div>
+
+  <ng-template #birthDay>
+  <div class="card-deck">
+      <div class="card">
+        <img src="..\..\assets\images (2).jpg" class="card-img-top" style="height: 200px ;width: 200px">
+        <div class="card-body">
+          <h5 class="card-title">Modern Birthday Cakes</h5>
+         <p>This Blue Colour Modern Cake is made by using special blue berry flavour</p>
+         <input class="btn btn-primary"  value="Add To Cart" style="background-color: rgb(74, 29, 126)">
+        
+        </div>
+      </div>
+      <div class="card">
+        <img src="..\..\assets\images (3).jpg" class="card-img-top" style="height: 200px ;width: 180px">
+        <div class="card-body">
+          <h5 class="card-title">Cream Butter  BirthDay Cake</h5>
+          <p>This Butter Icing Vanila Cake is made by using special vanila flavour</p>
+         <input class="btn btn-primary"  value="Add To Cart" style="background-color: rgb(74, 29, 126)">
+        
+        </div>
+      </div>
+      <div class="card">
+        <img src="..\..\assets\birth.jpg" class="card-img-top" style="height: 200px ;width: 180px">
+        <div class="card-body">
+            <h5 class="card-title">BirthDay Cake With Any Deccoration</h5>
+            <p>This Butter Icing Vanila Cake is made by using special vanila flavour</p>
+           <input class="btn btn-primary"  value="Add To Cart" style="background-color: rgb(74, 29, 126)">
+          
+        </div>
+      </div>
+    </div>
+  </ng-template>
+
+
+
+
+
+
+
+
+
+ 
+
+

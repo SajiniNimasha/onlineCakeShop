@@ -1,0 +1,146 @@
+<div class="container" style="padding: 16px;">  
+    <div class="text-center center-block" style="background-color: #068ea0">
+        <a class="navbar-brand" (click)="stateChanger9()" style="color: whitesmoke;padding: 15px ;background-color:  #046b79">Online Payments  </a>
+        <a class="navbar-brand" (click)="stateChanger10()" style="color: whitesmoke; padding: 15px;  background-color:  #046b79 ">  Cash On Delivery</a>
+      
+      </div>    
+</div>
+
+<input type="text" class="form-control"  value="{{total}}"/>
+
+<!-- //////////////////////////online payments//////////////////////// -->
+
+<div *ngIf="state8;then onlinePay ">State true</div>
+<ng-template #onlinePay>
+<div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form id="msform">
+               
+            
+                <fieldset>
+                    <h2 class="fs-title">Accepted Cards</h2>
+
+                    <div style="width: 70%">
+                            <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                    </div>
+                  
+                   
+                    <input type="text" name="fname" placeholder="Card Holder Name"/>
+                    <input type="text" name="lname" placeholder="Card Number"/>
+                    <input type="text" name="phone" placeholder="Expired Date"/>
+                    <input type="text" name="phone" placeholder="Email"/>
+                    <input type="text" class="form-control"  value="{{total}}"/>
+                    <input  type="button" name="next" class="next action-button" value="Pay Now"/>
+                </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Social Profiles</h2>
+                    <h3 class="fs-subtitle">Your presence on the social network</h3>
+                    <input type="text" name="twitter" placeholder="Twitter"/>
+                    <input type="text" name="facebook" placeholder="Facebook"/>
+                    <input type="text" name="gplus" placeholder="Google Plus"/>
+                    <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                    <input type="button" name="next" class="next action-button" value="Next"/>
+                </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Create your account</h2>
+                    <h3 class="fs-subtitle">Fill in your credentials</h3>
+                    <input type="text" name="email" placeholder="Email"/>
+                    <input type="password" name="pass" placeholder="Password"/>
+                    <input type="password" name="cpass" placeholder="Confirm Password"/>
+                    <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                    <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+                </fieldset>
+            </form>
+            <!-- link to designify.me code snippets -->
+            <div class="dme_link">
+                <p><a href="http://designify.me/code-snippets-js/" target="_blank">More Code Snippets</a></p>
+            </div>
+     
+        </div>
+    </div>
+</ng-template>
+
+<!-- /////////////////////////////////pay on diliver/////////////////////////////////////// -->
+
+<div *ngIf="state9;then payOnDeliver ">State true</div>
+<ng-template #payOnDeliver>
+
+
+        <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <form id="msform">
+                       
+                    
+                        <fieldset>
+                            <h2 class="fs-title">Cash On Delivery</h2>
+        
+                            <div style="width: 70%">
+                                    <!-- <img class="img-responsive pull-right" src="..\..\assets\cod.png"> -->
+                                
+                                   
+                           
+                            </div>
+                          
+                           
+                            <input type="text" name="fname" placeholder="Name"/>
+                            <input type="text" name="lname" placeholder="Address"/>
+                            <input type="text" name="phone" placeholder="Email"/>
+                            <input type="text" name="phone" placeholder="Delivery Date"/>
+                            <input type="text" name="phone" placeholder="Total Amount Payble"/>
+                            <input  type="button" name="next" class="next action-button" value="Confirm Now"/>
+                        </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Social Profiles</h2>
+                            <h3 class="fs-subtitle">Your presence on the social network</h3>
+                            <input type="text" name="twitter" placeholder="Twitter"/>
+                            <input type="text" name="facebook" placeholder="Facebook"/>
+                            <input type="text" name="gplus" placeholder="Google Plus"/>
+                            <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                            <input type="button" name="next" class="next action-button" value="Next"/>
+                        </fieldset>
+                        <fieldset>
+                            <h2 class="fs-title">Create your account</h2>
+                            <h3 class="fs-subtitle">Fill in your credentials</h3>
+                            <input type="text" name="email" placeholder="Email"/>
+                            <input type="password" name="pass" placeholder="Password"/>
+                            <input type="password" name="cpass" placeholder="Confirm Password"/>
+                            <input type="button" name="previous" class="previous action-button-previous" value="Previous"/>
+                            <input type="submit" name="submit" class="submit action-button" value="Submit"/>
+                        </fieldset>
+                    </form>
+                    <!-- link to designify.me code snippets -->
+                    <div class="dme_link">
+                        <p><a href="http://designify.me/code-snippets-js/" target="_blank">More Code Snippets</a></p>
+                    </div>
+             
+                </div>
+            </div>
+
+
+
+
+</ng-template>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
